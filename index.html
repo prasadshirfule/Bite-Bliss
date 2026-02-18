@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <title>Bite & Bliss</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="name">
+            <img src="./images/logo.png" alt="Bite & Bliss Logo" class="logo"> 
+            <div class="header_text">
+                <h1>Bite & Bliss </h1>
+                <b>“Every bite gives you happiness.”</b>
+            </div>
+        </div>
+        <div class="header_content"> 
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+            <button href="reservation.html" class="reserve"> Reservation</button>
+        </div>
+    </div>
+    <!-- Header Section -->
+
+    <!-- body Section -->
+     <div>
+        <div class="main">
+            <div class="main_content">
+                <div> 
+                    <p> It's not just Food, It's an Experience.</p>
+                </div>
+                <div style="margin-top: 25px; margin-left: 40px; display: flex; gap: 25px;">
+                    <button class="menu_button" onclick="window.location.href='menu.html'"> View menu </button>
+                    <button class="book_table"> Book &nbsp;a&nbsp; Table</button> 
+                </div>
+            </div>
+            <div>
+                <img src="./images/food.png" alt="Food Image" class="food_image">
+            </div>
+        </div>
+
+        <!-- About Us Section -->
+        <div class="about_us_section">
+            <div class="about_simple">
+                <div class="about_left">
+                    <img src="./images/restro_interior_f.png" alt="Bite & Bliss Restaurant" class="about_img">
+                </div>
+                <div class="about_right">
+                    <p class="about_us_label">About us</p>
+                    <h1 class="about_welcome_heading">Welcome to Bite & Bliss</h1>
+                    <p class="about_description">Where culinary excellence meets warm hospitality. We serve authentic, delicious cuisines prepared with the freshest ingredients by our dedicated team of chefs. Every dish is a masterpiece, carefully crafted with passion and precision. From traditional recipes to innovative flavors, we believe that food is more than just sustenance—it's an emotion, a memory, and a celebration. Our mission is to create moments of joy through exceptional food, friendly service, and a welcoming atmosphere where every guest feels like family.</p>
+                    <div class="about_highlights">
+                        <div class="highlight_box">
+                            <div class="highlight_number">10+</div>
+                            <div class="highlight_text">Years of<br><strong>EXPERIENCE</strong></div>
+                        </div>
+                        <div class="highlight_box">
+                            <div class="highlight_number">50+</div>
+                            <div class="highlight_text">Dedicated<br><strong>MASTER CHEFS</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Us Section -->
+
+        <div class="menu_section">
+            <div class="menu_heading">
+                <h1>Our Most Famous Dishes </h1>
+            </div>
+            <div class="eating_time">
+                <button class="meal_btn" onclick="filterMenu('breakfast')"> <img src="./images/breakfast.png" alt="Breakfast Image" class="eating_icon"> Breakfast </button>
+                <button class="meal_btn" onclick="filterMenu('lunch')"> <img src="./images/lunch.png" alt="Lunch Image" class="eating_icon"> Lunch </button>
+                <button class="meal_btn" onclick="filterMenu('dinner')"> <img src="./images/dinner.png" alt="Dinner Image" class="eating_icon"> Dinner </button>
+            </div>
+           <menu id="menuContainer">
+                <!-- BREAKFAST ITEMS -->
+                <div class="menu_item breakfast">
+                    <div class="card">
+                        <img src="./images/pohe.jpg" alt="Pohe" class="dish_image">
+                        <div class="card_content">
+                            <p class="dish_name">Pohe</p>
+                            <p class="dish_price">₹40</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_item breakfast">
+                    <div class="card">
+                        <img src="./images/idli.jpg" alt="Idli" class="dish_image">
+                        <div class="card_content">
+                            <p class="dish_name">Idli & Sambar</p>
+                            <p class="dish_price">₹50</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_item breakfast">
+                    <div class="card">
+                        <img src="./images/dosa.jpg" alt="Dosa" class="dish_image">
+                        <div class="card_content">
+                            <p class="dish_name"> Masala Dosa</p>
+                            <p class="dish_price">₹80</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_item breakfast">
+                    <div class="card">
+                        <img src="./images/paratha.jpg" alt="Paratha" class="dish_image">
+                        <div class="card_content">
+                            <p class="dish_name">Aloo Paratha</p>
+                            <p class="dish_price">₹60</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_item breakfast">
+                    <div class="card">
+                        <img src="./images/omellette.jpg" alt="Omelette" class="dish_image">
+                        <div class="card_content">
+                            <p class="dish_name">Cheese Omelette</p>
+                            <p class="dish_price">₹90</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_item breakfast">
+                    <div class="card">
+                        <img src="./images/Upma.jpg" alt="Upma" class="dish_image">
+                        <div class="card_content">
+                            <p class="dish_name">Vegetable Upma</p>
+                            <p class="dish_price">₹50</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LUNCH ITEMS -->
+                <div class="menu_item lunch" style="display: none;">
+                    <div class="card">
+                        <img src="./images/biryani.jpg" alt="Biryani" class="dish_image">
+                        <div class="card_content">
+                            <p class="dish_name">Hyderabadi Biryani</p>
+                            <p class="dish_price">₹320</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_item lunch" style="display: none;">
+                    <div class="card">
+                        <img src="./images/indian_thali.jpg" alt="Thali" class="dish_image">
+                        <div class="card_content">
+                            <p class="dish_name">Indian Thali</p>
+                            <p class="dish_price">₹260</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_item lunch" style="display: none;">
+                    <div class="card">
+                        <img src="./images/butter_chicken.jpg" alt="Butter Chicken" class="dish_image">
+                        <div class="card_content">
+                            <p class="dish_name">Butter Chicken</p>
+                            <p class="dish_price">₹280</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_item lunch" style="display: none;">
+                    <div class="card">
+                        <img src="./images/paneer_tikka.jpg" alt="Paneer Tikka" class="dish_image">
+                        <div class="card_content">
+                            <p class="dish_name">Paneer Tikka Masala</p>
+                            <p class="dish_price">₹250</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_item lunch" style="display: none;">
+                    <div class="card">
+                        <img src="./images/margharita.jpg" alt="Pizza" class="dish_image">
+                        <div class="card_content">
+                            <p class="dish_name">Margherita Pizza</p>
+                            <p class="dish_price">₹180</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_item lunch" style="display: none;">
+                    <div class="card">
+                        <img src="./images/pulao.jpg" alt="Pulao" class="dish_image">
+                        <div class="card_content">
+                            <p class="dish_name">Vegetable Pulao</p>
+                            <p class="dish_price">₹120</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DINNER ITEMS -->
+                <div class="menu_item dinner" style="display: none;">
+                    <div class="card">
+                        <img src="./images/roti_curry.png" alt="Roti & Curry" class="dish_image">
+                        <div class="card_content">
+                            <p class="dish_name">Roti & Curry</p>
+                            <p class="dish_price">₹120</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_item dinner" style="display: none;">
+                    <div class="card">
+                        <img src="./images/dal_makhani.jpg" alt="Dal & Rice" class="dish_image">
+                        <div class="card_content">
+                            <p class="dish_name">Dal Makhani Rice</p>
+                            <p class="dish_price">₹180</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_item dinner" style="display: none;">
+                    <div class="card">
+                        <img src="./images/tanduri_chicken.jpg" alt="Tandoori Chicken" class="dish_image">
+                        <div class="card_content">
+                            <p class="dish_name">Tandoori Chicken</p>
+                            <p class="dish_price">₹280</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_item dinner" style="display: none;">
+                    <div class="card">
+                        <img src="./images/garlic_naan.jpg" alt="Garlic Naan" class="dish_image">
+                        <div class="card_content">
+                            <p class="dish_name">Garlic Naan</p>
+                            <p class="dish_price">₹80</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_item dinner" style="display: none;">
+                    <div class="card">
+                        <img src="./images/spagheti.webp" alt="Spaghetti" class="dish_image">
+                        <div class="card_content">
+                            <p class="dish_name">Spaghetti Carbonara</p>
+                            <p class="dish_price">₹210</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_item dinner" style="display: none;">
+                    <div class="card">
+                        <img src="./images/fish_curry.jpg" alt="Fish Curry" class="dish_image">
+                        <div class="card_content">
+                            <p class="dish_name">Fish Curry</p>
+                            <p class="dish_price">₹260</p>
+                        </div>
+                    </div>
+                </div>
+            </menu>
+            <div style="text-align: center; margin-top: 40px;">
+                <button class="explore_more_btn" onclick="window.location.href='menu.html'">Explore More</button>
+            </div>
+        </div>
+    </div>
+    <!-- body Section -->
+
+    <div class="footer">
+        <div class="footer_container">
+            <div class="footer_section">
+                <h3>About Us</h3>
+                <p>Bite & Bliss is your go-to destination for delicious, authentic food. We believe every bite gives you happiness.</p>
+            </div>
+
+            <div class="footer_section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_section">
+                <h3>Contact Info</h3>
+                <p><strong>Phone:</strong> +91-9890341388</p>
+                <p><strong>Email:</strong> info@biteandbliss.com</p>
+                <p><strong>Address:</strong> Bhivarabai Sawant Institute of Technology & research, Wagholi</p>
+            </div>
+
+            <div class="footer_section">
+                <h3>Follow Us</h3>
+                <div class="social_links">
+                    <a href="https://www.instagram.com/prasadpatil.in?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social_icon">Facebook</a>
+                    <a href="#" class="social_icon">Instagram</a>
+                    <a href="#" class="social_icon">Twitter</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <p>&copy; 2026 Bite & Bliss. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>
